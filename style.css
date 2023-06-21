@@ -1,0 +1,105 @@
+/* CSS */
+
+body{
+    background-color: black;
+}
+.main{
+    padding-top: 45px;
+}
+span,p,h1,h2,h3,h4,h5,h6{
+    font-weight: bold !important;
+}
+
+/* Card Start */
+.card{
+    margin: 0 auto;
+    width: 60vh;
+    border-radius: 30px;
+    background: linear-gradient(45deg,#8ee7e7,#69f17e,#8ee7e7,#69f17e);
+    background-size: 300% 300%;
+    animation: color 12s linear infinite;
+	cursor: initial;
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+
+.degree h1{
+    margin-top: 25px;
+    font-size: 8rem;
+}
+.row .col-md-6:first-child div{
+    margin-top: 30px;
+}
+.row .col-md-6:last-child img{
+    height: 170px;
+    width: 200px;
+}
+
+.location input{
+    width: 40vh;
+}
+.form-control:focus{
+    border-color: black;
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
+}
+.btn{
+    background-color: black;
+    color: white;
+}
+.btn:hover{
+    background-color: chocolate;
+    color: white;
+}
+.wf span:last-child{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media screen and (max-width:992px) {
+    .main{
+        padding-top: 30px;
+    }
+}
+@media screen and (max-width:768px) {
+    .main{
+        padding-top: 20px;
+    }
+    .content .col-md-6:last-child{
+        padding: 20px;
+    }
+}
+@media screen and (max-width:576px) {
+    .main{
+        padding-top: 0;
+    }
+    .card{
+        border-radius: 0px;
+        padding: 10px;
+    }
+}
+@media screen and (max-width:400px) {
+    .wf{
+        margin-top: 10px;
+    }
+    .content{
+        margin-top: 10px;
+    }
+    .degree h5,h6{
+        margin-top: 15px;
+    }
+    .content .col-md-6:last-child{
+        padding: 30px;
+    }
+}
+
+
